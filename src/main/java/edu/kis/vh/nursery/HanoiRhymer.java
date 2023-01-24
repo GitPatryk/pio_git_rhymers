@@ -8,11 +8,11 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
         return totalRejected;
     }
 
-    public void countIn(int in) {
-        if (!callCheck() && in > peekaboo())
+    public void countIn(int i) {
+        if (!callCheck() && i > peekaboo())
             totalRejected++;
         else
-            super.countIn(in);
+            super.countIn(i);
     }
 }
 /* HanoiRhymer wymagał formatowania w linii piątej oraz 11-15 *
